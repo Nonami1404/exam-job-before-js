@@ -1,0 +1,227 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+.container{
+    width: 1200px;
+    margin: 0 auto;
+}
+:root{
+    --bg_header:#014E56;
+    --bg_1:#004047;
+    --bg_2:#012F34;
+    --bg_3:#F67E7E;
+    --bg_footer:#002529;
+    --white:#FFFFFF;
+    --worker_name:#79C8C7;
+}
+.first{
+    background: var(--bg_header);
+    height: fit-content;
+    padding-bottom: 120px;
+}
+.header_wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 70px;
+    height: 48px;
+    background: transparent;
+    margin-bottom: 120px;
+}
+nav{
+    display: flex;
+    align-items: center;
+    gap: 45px;
+}
+nav ul{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+nav ul a{
+    color: var(--white);
+    font-size: 18px;
+}
+.btn{
+    width: 153px;
+    height: 48px;
+    background: transparent;
+    border: 2px solid var(--white);
+    border-radius: 24px;
+    color: var(--white);
+    font-size: 15px;
+    font-weight: 600;
+}
+.section_wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 156px;
+}
+.text_1{
+    font-family: sans-serif;
+    font-weight: 700;
+    font-size: 64px;
+    color: var(--white);
+}
+.text_2{
+    width: 730px;
+    color: var(--white);
+    font-family: sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+}
+.second{
+    height: fit-content;
+    background: var(--bg_1);
+    padding: 71px;
+}
+.section_wrapper_2{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.section_wrapper_2 h1{
+    color: var(--white);
+    font-size:48px;
+    font-weight: 700;
+    margin-bottom: 70px;
+}
+.wrapper_card{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    gap: 30px;
+}
+.card{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    width: 350px;
+    height: 300px;
+    background: var(--bg_2);
+    gap: 40px;
+    padding-top: 40px;
+}
+.worker_info{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3px;
+    flex-direction: column;
+}
+.name_oval{
+    color: var(--worker_name);
+    font-size: 18px;
+    font-weight: 700;
+}
+.job{
+    font-size: 15px;
+    font-weight: 500;
+    color: var(--white);
+}
+.plus{
+    position: absolute;
+    bottom: -20px;
+}
+.third{
+    height: 355px;
+    background: var(--bg_2);
+    padding-top: 113px;
+    display: flex;
+    justify-content: center;
+}
+.section_wrapper_3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 52px;
+}
+.section_wrapper_3 h1{
+    font-size: 48px;
+    font-weight: 700;
+    color: var(--white);
+}
+.brands_wrapper{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    margin: 0 auto;
+    gap: 80px;
+}
+.fourth{
+    height: 200px;
+    background: var(--bg_3);
+    padding-top: 85px;
+}
+.section_wrapper_4{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.section_wrapper_4 span{
+    font-size: 48px;
+    font-weight: 900;
+    color: #012F34;
+}
+.bnt_pink{
+    border: 2px solid #012F34;
+    color: #012F34;
+    cursor: pointer;
+}
+.footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.bg{
+    height: 88px;
+    background: var(--bg_footer);
+    display: grid;
+    align-items: center;
+}
+.social_media_wrapper{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+@media(max-width:768px){
+    .container{
+        width: 1000px;
+    }
+    section , .bg{
+        width: 1200px;
+    }
+    .section_wrapper{
+        flex-direction: column;
+        justify-content: center;
+        gap: 24px;
+    }
+    .wrapper_card{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .third{
+        background: var(--bg_1);
+    }
+    .plus{
+        bottom: -20px;
+    }
+}
+@media(max-width:375px){
+    .wrapper_card{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .brands_wrapper{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .third{
+        height: fit-content;
+        padding-bottom: 52px;
+    }
+}
